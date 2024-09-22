@@ -1,0 +1,31 @@
+
+:root {
+    /* Body */
+    --body-background-color : rgb(240 240 240);
+    --main-text-color : rgb(40 40 40);
+    --secondary-text-color : rgb(60 60 60);
+
+    /* Header */
+    --header-background-color : white;
+
+    /* Main */
+    --main-background-color : rgb(1 1 1);
+
+    /* Footer */
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    /* Body */
+    --body-background-color : rgb(40 40 40);
+    --main-text-color : rgb(230 230 230);
+    --secondary-text-color : rgb(200 200 200);
+
+    /* Header */
+    --header-background-color : rgb(80, 80, 80);
+
+    /* Main */
+    --main-background-color : rgb(60 60 60);
+
+    /* Footer */
+}}

@@ -11,46 +11,42 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
-    <body class="min-h-screen  bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
-        <header class="sticky top-0 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-700 border-gray-100 dark:border-gray-600">
+    <body>
+        <header>
+            @php
+                $navLinks = [
+                    'Homepage' => 'homepage',
+                    'Blog' => 'blog',
+                    'Notes' => 'notes'
+                ];
+            @endphp 
             <!-- Navigation menu -->
-            <nav class="mx-auto max-w-5xl">
-                <div class="flex justify-between h-16">
-                    <!-- Left -->
-                    <div class="flex">
-                        <!-- Logo -->
-                        <div class="shrink-0 flex items-center">
-                            <a href="{{ route('homepage') }}">
-                                <x-application-logo class="block h-10 w-auto fill-current text-gray-800 dark:text-gray-200" />
-                            </a>
-                        </div>
-
-                        <!-- Navigation -->
-                        <div class="space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                            <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
-                                Homepage
-                            </x-nav-link>
-                            <x-nav-link :href="route('test')" :active="request()->routeIs('test')">
-                                Blog
-                            </x-nav-link>
-                            <x-nav-link :href="route('test')" :active="request()->routeIs('test')">
-                                Notes
-                            </x-nav-link>
-                        </div>
+            <nav>
+                <!-- Left -->
+                <div>
+                    <!-- Logo -->
+                    <div class="main-logo-container">
+                        <a href="{{ route('homepage') }}">
+                            <x-application-logo class="main-logo" />
+                        </a>
                     </div>
-    
-                    <!-- Right -->
-                    <div class="flex">
-                        <x-button-link :href="route('test')">
-                            Login
-                        </x-button-link>
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        @foreach ($navLinks as $name => $route)
+                            <a class="navlink {{ request()->routeIs($route) ? 'active' : '' }}" href="{{ route($route) }}">
+                                {{ $name }}
+                            </a>
+                        @endforeach
                     </div>
                 </div>
+
+                <!-- Right -->
+                <div></div>
             </nav>
         </header>
 
-        <main class="max-w-7xl mx-auto bg-gray-200 dark:bg-gray-800"
-            style="min-height: calc(100vh - 4rem)">
+        <main>
             {{ $slot }}
         </main>
 

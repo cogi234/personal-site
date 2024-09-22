@@ -1,0 +1,95 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-background-color);
+    color: var(--main-text-color);
+
+    margin: 0;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: var(--header-background-color);
+}
+@media (min-width: 1024px) { header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}}
+
+header>nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+header>nav>div {
+    display: flex;
+}
+
+/* Logo */
+.main-logo-container {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 1rem;
+}
+.main-logo {
+    display: block;
+    height: 2.5rem;
+    width: auto;
+    fill: var(--main-text-color);
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+}
+
+.navlink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    color: var(--secondary-text-color);
+    
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+
+    transition-property: color, background-color;
+    transition-duration: 0.25s;
+}
+.navlink.active {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+.navlink:hover {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+}
+
+/* Main */
+main {
+    min-height: calc(100vh - 4rem);
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+
+    background-color: var(--main-background-color);
+}
