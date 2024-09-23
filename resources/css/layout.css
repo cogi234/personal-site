@@ -1,4 +1,5 @@
 :root {
+    --width : 64rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -27,7 +28,7 @@ header {
 header>nav {
     margin-left: auto;
     margin-right: auto;
-    max-width: 64rem;
+    max-width: var(--width);
 
     display: flex;
     justify-content: space-between;
@@ -86,10 +87,62 @@ header>nav>div {
 /* Main */
 main {
     min-height: calc(100vh - 4rem);
-    max-width: 80rem;
+    max-width: var(--width);
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 2rem;
 
     background-color: var(--main-background-color);
+}
+
+/* Footer */
+footer {
+    max-width: var(--width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+
+    background-color: var(--footer-background-color);
+
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+/* h-card */
+.my-h-card {
+    padding: 0rem 1rem;
+
+    border: 0.25rem white solid;
+    border-radius: 1rem;
+    
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: left;
+}
+.my-h-card .u-photo {
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+
+    margin-right: 1rem;
+}
+.my-h-card .p-name {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+.my-h-card .p-nickname {
+    font-weight: bold;
+}
+
+/* Badges */
+.badges {
+    margin-top: 0.5rem;
+}
+
+.button {
+    image-rendering: pixelated;
 }

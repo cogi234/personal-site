@@ -51,7 +51,28 @@
         </main>
 
         <footer>
-
+            <div class="h-card my-h-card">
+                <h2>About me</h2>
+                <img class="u-photo" src="/images/avatar.jpg">
+                <a class="p-name u-url" href="{{ route('homepage') }}">
+                    <span class="p-given-name">Colin</span>
+                    <span class="p-family-name">Bougie</span>
+                </a>
+                <p class="p-note">
+                    I'm a computer science student from <span class="p-region">Quebec</span>, making a personal website for fun and to share my interests.
+                </p>
+                <p>
+                    I'm <span class="p-nickname">cogi234</span> in most games and on most platforms where I'm active.
+                </p>
+                <p>
+                    <strong>Pronouns</strong>: <span class="p-pronouns">he/him</span>
+                </p>
+            </div>
+            <!-- Badges -->
+            <div class="badges">
+                <a href="https://indieweb.org/"><img src="/images/buttons/indiewebcamp-button.png" class="button"></a>
+                <a href="https://microformats.org/"><img src="/images/buttons/microformats-button.png" class="button"></a>
+            </div>
         </footer>
     </body>
 
