@@ -1,25 +1,30 @@
 
 :root {
     /* Body */
-    --body-background-color : rgb(240 240 240);
+    --body-background-color : rgb(100 100 100);
+
+    /* Header */
+    --header-background-color : rgb(150 150 150);
+
+    /* Main */
+    --main-background-color : rgb(230 230 230);
+
+    /* Footer */
+    --footer-background-color : rgb(180 180 180);
+
+    /* Text */
     --main-text-color : rgb(40 40 40);
     --secondary-text-color : rgb(60 60 60);
 
-    /* Header */
-    --header-background-color : white;
-
-    /* Main */
-    --main-background-color : rgb(1 1 1);
-
-    /* Footer */
+    /* Solid colors */
+    --solid-color : white;
+    --inverse-color: black;
 }
 
 @media (prefers-color-scheme: dark) {
 :root {
     /* Body */
     --body-background-color : rgb(40 40 40);
-    --main-text-color : rgb(230 230 230);
-    --secondary-text-color : rgb(200 200 200);
 
     /* Header */
     --header-background-color : rgb(80, 80, 80);
@@ -29,4 +34,12 @@
 
     /* Footer */
     --footer-background-color : rgb(80 80 80);
+
+    /* Text */
+    --main-text-color : rgb(230 230 230);
+    --secondary-text-color : rgb(200 200 200);
+
+    /* Solid colors */
+    --solid-color : black;
+    --inverse-color: white;
 }}

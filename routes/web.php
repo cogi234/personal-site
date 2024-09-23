@@ -10,3 +10,6 @@ Route::view('/blog', 'homepage')
 
 Route::view('/notes', 'homepage')
     ->name('notes');
+
+Route::view('/about', 'homepage')
+    ->name('about');

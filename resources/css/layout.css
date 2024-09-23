@@ -113,7 +113,7 @@ footer {
 .my-h-card {
     padding: 0rem 1rem;
 
-    border: 0.25rem white solid;
+    border: 0.25rem var(--inverse-color) solid;
     border-radius: 1rem;
     
     font-size: 1rem;
@@ -136,6 +136,13 @@ footer {
 }
 .my-h-card .p-nickname {
     font-weight: bold;
+}
+.my-h-card .social-links img {
+    height: 2rem;
+    width: auto;
+    margin: 0 0.25rem;
+
+    color: var(--main-text-color);
 }
 
 /* Badges */

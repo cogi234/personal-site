@@ -17,7 +17,8 @@
                 $navLinks = [
                     'Homepage' => 'homepage',
                     'Blog' => 'blog',
-                    'Notes' => 'notes'
+                    'Notes' => 'notes',
+                    'About' => 'about'
                 ];
             @endphp 
             <!-- Navigation menu -->
@@ -66,6 +67,10 @@
                 </p>
                 <p>
                     <strong>Pronouns</strong>: <span class="p-pronouns">he/him</span>
+                </p>
+                <p class="social-links">
+                    <a href="https://www.tumblr.com/blog/cogi234" rel="me" target="_blank"><img src="images/icons/tumblr-blue.png"></a>
+                    <a href="https://github.com/cogi234" rel="me" target="_blank"><img class="dark" src="images/icons/github-white.png"><img class="light" src="images/icons/github-gray.png"></a>
                 </p>
             </div>
             <!-- Badges -->
