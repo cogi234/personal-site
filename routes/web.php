@@ -11,5 +11,8 @@ Route::view('/blog', 'homepage')
 Route::view('/notes', 'homepage')
     ->name('notes');
 
+Route::view('/tags', 'homepage')
+    ->name('tags');
+
 Route::view('/about', 'homepage')
     ->name('about');

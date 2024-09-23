@@ -144,6 +144,13 @@ footer {
 
     color: var(--main-text-color);
 }
+.my-h-card .social-links svg {
+    height: 2rem;
+    width: auto;
+    margin: 0 0.25rem;
+
+    color: var(--main-text-color);
+}
 
 /* Badges */
 .badges {
