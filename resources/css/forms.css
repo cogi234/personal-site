@@ -1,0 +1,40 @@
+.input-container {
+    margin: 2rem 0.5rem;
+}
+
+.input-label {
+    display: block;
+    margin-left: 0.5rem;
+    color: var(--secondary-text-color);
+}
+.inline-input-label {
+    display: inline;
+
+    color: var(--secondary-text-color);
+}
+
+.input-errors {
+    margin-top: 0.5rem;
+
+    color: red;
+}
+
+.text-input {
+    display: block;
+
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+
+    border: 2px solid var(--body-background-color);
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+
+    background-color: var(--footer-background-color);
+    color: var(--main-text-color);
+}
+
+.checkbox-input {
+    width: 1rem;
+    height: 1rem;
+}

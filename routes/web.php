@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::view('/', 'homepage')
     ->name('homepage');
 
@@ -16,3 +17,5 @@ Route::view('/tags', 'homepage')
 
 Route::view('/about', 'homepage')
     ->name('about');
+
+require __DIR__ . '/auth.php';

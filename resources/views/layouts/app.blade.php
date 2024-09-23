@@ -44,7 +44,11 @@
                 </div>
 
                 <!-- Right -->
-                <div></div>
+                <div>
+                    <form method="POST" action="{{ route('logout') }}">
+                        <button type="submit" style="position: relative; top: 50%; transform:translateY(-50%); -ms-transform:translateY(-50%)">Logout</button>
+                    </form>
+                </div>
             </nav>
         </header>
 

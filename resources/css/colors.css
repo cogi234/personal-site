@@ -16,6 +16,9 @@
     --main-text-color : rgb(40 40 40);
     --secondary-text-color : rgb(60 60 60);
 
+    /* Buttons */
+    --main-button-background-color : rgb(50 50 50);
+
     /* Solid colors */
     --solid-color : white;
     --inverse-color: black;
@@ -38,6 +41,14 @@
     /* Text */
     --main-text-color : rgb(230 230 230);
     --secondary-text-color : rgb(200 200 200);
+    
+    /* Buttons */
+    --button-background-color : rgb(70 70 70);
+    --button-border-color : rgb(50 50 50);
+    --button-hover-background-color : rgb(50 50 50);
+    --button-hover-border-color : rgb(30 30 30);
+    --button-active-background-color : rgb(40 40 40);
+    --button-active-border-color : rgb(20 20 20);
 
     /* Solid colors */
     --solid-color : black;
