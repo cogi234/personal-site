@@ -7,6 +7,11 @@
 
         <title>{{ $title ?? config('app.name') }}</title>
 
+        <!-- Links -->
+        <link rel="indieauth-metadata" href="{{ route('indieauth.metadata') }}">
+        <link rel="authorization_endpoint" href="{{ route('indieauth') }}">
+        <link rel="token_endpoint" href="{{ route('indieauth') }}">
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -45,9 +50,11 @@
 
                 <!-- Right -->
                 <div>
+                    @auth
                     <form method="POST" action="{{ route('logout') }}">
                         <button type="submit" style="position: relative; top: 50%; transform:translateY(-50%); -ms-transform:translateY(-50%)">Logout</button>
                     </form>
+                    @endauth
                 </div>
             </nav>
         </header>

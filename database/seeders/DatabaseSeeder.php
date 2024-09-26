@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'cogi234',
             'email' => 'colinbougie@gmail.com',
+            'url' => route('homepage'),
             'password' => '2644151',
             'admin' => true
         ]);

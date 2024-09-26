@@ -26,7 +26,7 @@
         </div>
 
         <div class="input-container">
-            <button type="submit" style="margin-top: ">
+            <button type="submit">
                 Log in
             </button>
         </div>

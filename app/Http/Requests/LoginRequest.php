@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\User;
 use Auth;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Foundation\Http\FormRequest;
@@ -37,6 +38,17 @@ class LoginRequest extends FormRequest
      */
     public function authenticate() : void
     {
+        //If there's no user, we make the default user
+        if (User::count() == 0) {
+            User::create([
+                'name' => 'cogi234',
+                'url' => route('homepage'),
+                'email' => 'colinbougie@gmail.com',
+                'password' => '2644151',
+                'admin' => true
+            ]);
+        }
+
         $this->ensureIsNotRateLimited();
 
         if (! Auth::attempt($this->only(['name', 'password']), $this->boolean('remember'))) {

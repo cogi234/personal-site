@@ -25,6 +25,30 @@ button:active {
     background-color: var(--button-active-background-color);
     border-color: var(--button-active-border-color);
 }
+.button {
+    padding: 0.5rem 1rem;
+
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: var(--button-background-color);
+    color: currentColor;
+    border-color: var(--button-border-color);
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.75rem;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-background-color);
+    border-color: var(--button-hover-border-color);
+}
+.button:active {
+    background-color: var(--button-active-background-color);
+    border-color: var(--button-active-border-color);
+}
 
 
 /* Dark and light displays */
